@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PassGen UI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Password Generator</h2>
+        
+        <div class="input-group">
+            <label for="length">Length:</label>
+            <input type="number" id="length" value="12" min="4" max="50">
+        </div>
+
+        <div class="checkbox-group">
+            <label><input type="checkbox" id="upper" checked> Uppercase (A-Z)</label>
+            <label><input type="checkbox" id="lower" checked> Lowercase (a-z)</label>
+            <label><input type="checkbox" id="numbers" checked> Numbers (0-9)</label>
+            <label><input type="checkbox" id="symbols" checked> Symbols (!@#$)</label>
+        </div>
+
+        <button id="generateBtn">Generate Password</button>
+
+        <div class="result-area">
+            <div id="passwordDisplay">********</div>
+            <button id="copyBtn" class="secondary-btn">Copy to Clipboard</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
